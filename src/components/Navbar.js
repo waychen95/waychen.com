@@ -32,10 +32,10 @@ const Navbar = () => {
           </div>
           <div className={`hiddenLinks ${toggle ? 'open' : ''}`}>
             <div>
-              <a href='#'>Home</a>
+              <a href='/'>Home</a>
             </div>
             <div>
-              <a href='#'>About</a>
+              <a href=''>About</a>
             </div>
             <div>
               <a href='#'>Project</a>

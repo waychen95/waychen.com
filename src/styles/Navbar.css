@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-around;
   transition: background-color 0.3s ease;
-  width: 100%;
+  width: 100vw;
   padding: 1rem 0 1rem;
 }
 
@@ -83,13 +83,14 @@
 
 @media screen and (max-width: 1000px) {
 
+
   .navbar-option {
     display: none;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    width: 100%; /* Make it take the full width */
+    width: 100%;
   }
 
   .hamburgerMenu {
@@ -104,21 +105,19 @@
   .left-side {
     flex: 50%;
     height: 100%;
-    margin-left: 8rem;
-    margin-right: 3rem;
+    margin-left: 3rem;
   }
 
   .hiddenLinks.open {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     transition: justify-content 0.5 ease-in-out;
     color: black;
   }
 
   .hiddenLinks.open div a {
-    margin-right: 5rem;
+    margin-right: 20px;
     color: black;
   }
 }
