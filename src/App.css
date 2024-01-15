@@ -1,11 +1,12 @@
 html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 body {
-  margin-bottom: 100rem;
-  height: 100vh;
+  margin-bottom: 50rem;
+  width: 100vw;
 }
 
 

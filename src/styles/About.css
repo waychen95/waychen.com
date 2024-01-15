@@ -1,0 +1,23 @@
+.css-heg063-MuiTabs-flexContainer {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about-title {
+  text-align: center;
+  padding: auto;
+}
+
+
+.about-box {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  margin: 1rem 1rem;
+}
+
+.text {
+  text-align: left;
+  align-items: center;
+  font-size: large;
+}

@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import '../styles/Navbar.css';
 import {FaBars} from 'react-icons/fa';
+import WebsiteLogo from '../assets/websitelogo.png';
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 const Navbar = () => {
   const [isSticky, setSticky] = useState(false);
@@ -23,30 +27,48 @@ const Navbar = () => {
     };
   }, []);
 
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <>
       <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
         <div className={`left-side ${toggle ? 'open' : ''}`}>
           <div className={`logo ${toggle ? 'open' : ''}`}>
-            <h1>Wayne Chen</h1>
-          </div>
-          <div className={`hiddenLinks ${toggle ? 'open' : ''}`}>
-            <div>
-              <a href='/'>Home</a>
-            </div>
-            <div>
-              <a href=''>About</a>
-            </div>
-            <div>
-              <a href='#'>Project</a>
-            </div>
-            <div>
-              <a href='#'>Contact</a>
-            </div>
+            <img src={WebsiteLogo} alt='website-logo' className='website-logo'></img>
           </div>
         </div>
         <div className='navbar-section' onClick={handleToggle}>
-          <FaBars size="30" className={`hamburgerMenu ${toggle ? 'open' : ''}`}/>
+          <Button
+              id="basic-button"
+              aria-controls={open ? 'basic-menu' : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? 'true' : undefined}
+              className={`hamburgerMenu ${toggle ? 'open' : ''}`}
+              onClick={handleClick}
+            >
+              <FaBars size="30" className={`hamburgerMenu ${toggle ? 'open' : ''}`}/>
+            </Button>
+            <Menu
+              id="basic-menu"
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+              MenuListProps={{
+                'aria-labelledby': 'basic-button',
+              }}
+            >
+              <MenuItem onClick={handleClose}>Home</MenuItem>
+              <MenuItem onClick={handleClose}>About</MenuItem>
+              <MenuItem onClick={handleClose}>Project</MenuItem>
+              <MenuItem onClick={handleClose}>Contact</MenuItem>
+            </Menu>
           <ul className='navbar-option'>
               <li><a href='#'>Home</a></li>
               <li><a href='#'>About</a></li>

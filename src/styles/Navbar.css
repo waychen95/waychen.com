@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-around;
   transition: background-color 0.3s ease;
-  width: 100vw;
+  width: 100%;
   padding: 1rem 0 1rem;
 }
 
@@ -14,6 +14,11 @@
   background-color: #33333367; /* Add a background color for the sticky navbar */
   z-index: 1000;
   padding: 1rem 0 1rem;
+}
+
+.website-logo {
+  width: 25%;
+  height: 100%;
 }
 
 .left-side {
@@ -90,16 +95,12 @@
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    width: 100%;
+
   }
 
   .hamburgerMenu {
     display: flex;
     margin-right: 1rem;
-  }
-
-  .logo.open {
-    display: none;
   }
 
   .left-side {
@@ -108,16 +109,7 @@
     margin-left: 3rem;
   }
 
-  .hiddenLinks.open {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    transition: justify-content 0.5 ease-in-out;
-    color: black;
-  }
-
-  .hiddenLinks.open div a {
-    margin-right: 20px;
-    color: black;
+  .css-6hp17o-MuiList-root-MuiMenu-list {
+    padding: 2rem;
   }
 }
