@@ -10,6 +10,7 @@ import SkillIcon from '@mui/icons-material/Construction';
 import ProfileImage from '../assets/profile_picture.jpeg';
 import '../styles/Content.css';
 import { Card, CardContent, Grid, Container } from '@mui/material';
+import Portfolio from './Portfolio';
 
 
 function CustomTabPanel(props) {
@@ -102,7 +103,7 @@ const Content = () => {
               </div>
               <div className='content-text'>
                 <p>
-                  Hey there! I'm Wayne Chen, currently cruising through Term 2 in BCIT's Computer System Technology program, on the lookout for a co-op gig to level up my skills. I'm your go-to guy for JavaScript, Java, Python, and more. My stint as an Education Coordinator and Research Assistant showed off my knack for organizing and working smoothly with others.<br></br><br></br>
+                  Hey there! I'm Wayne Chen, currently cruising through Term 2 in BCIT's Computer System Technology program, on the lookout for a co-op position to level up my skills. I'm your go-to guy for JavaScript, Java, Python, and more. My stint as an Education Coordinator and Research Assistant showed off my knack for organizing and working smoothly with others.<br></br><br></br>
 
                   Backstory: Initially, I aimed to be a data analyst, minoring in statistics at UBC. But, turns out, I prefer creating stuff rather than digging through data. That's why I made the switch to computer science, and so far, I'm loving it.<br></br><br></br>
 
@@ -139,7 +140,7 @@ const Content = () => {
           </Container>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2} className='text'>
-          Item Three
+          <Portfolio />
         </CustomTabPanel>
     </Box>
   )
