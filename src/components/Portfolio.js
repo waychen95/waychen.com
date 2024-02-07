@@ -26,7 +26,7 @@ const ExperienceCard = ({ title, date, company, description }) => {
 
 const Portfolio = () => {
   return (
-    <div>
+    <div className='portfolio-container'>
       <ExperienceCard
         title="Education Coordinator"
         date="Oct 2022 - April 2023"

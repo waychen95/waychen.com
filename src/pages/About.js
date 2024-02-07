@@ -6,8 +6,6 @@ const About = () => {
 
   return (
     <div className='about-box'>
-      <div className='about-title'>
-      </div>
       <Content />
     </div>
 

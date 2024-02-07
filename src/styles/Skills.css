@@ -1,0 +1,32 @@
+#skill-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.skill-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+}
+
+.item div {
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.774);
+  color: aliceblue;
+  font-size: larger;
+}
+
+.skill-image {
+  margin: auto auto;
+  padding: 1rem;
+}

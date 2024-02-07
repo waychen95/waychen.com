@@ -7,7 +7,7 @@ import SendIcon from '@mui/icons-material/Send';
 
 const Home = () => {
   return (
-    <div className='main' style={{ backgroundImage: `url(${BannerImage})` }}>
+    <div id="background-image" className='main' style={{ backgroundImage: `url(${BannerImage})` }}>
       <div className='banner-text'>
         <h1>Hi, I am a developer currently looking for co-op. Feel free to contact me!</h1>
         <Button variant="outlined" startIcon={<DeleteIcon />}>

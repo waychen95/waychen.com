@@ -9,8 +9,9 @@ import ExperienceIcon from '@mui/icons-material/HomeRepairService';
 import SkillIcon from '@mui/icons-material/Construction';
 import ProfileImage from '../assets/profile_picture.jpeg';
 import '../styles/Content.css';
-import { Card, CardContent, Grid, Container } from '@mui/material';
 import Portfolio from './Portfolio';
+import Skills from './Skills';
+import '../styles/Skills.css';
 
 
 function CustomTabPanel(props) {
@@ -46,25 +47,6 @@ function a11yProps(index) {
   };
 }
 
-const skills = [
-  {
-    title: 'Programming',
-    list: ['JavaScript', 'Java', 'Python', 'R', 'C'],
-  },
-  {
-    title: 'Web & Database',
-    list: ['HTML', 'CSS', 'Bootstrap', 'React', 'Node', 'Express', 'Firebase', 'MySQL'],
-  },
-  {
-    title: 'Tech',
-    list: ['Git', 'Visual Studio', 'Eclipse', 'PyCharm', 'IntelliJ'],
-  },
-  {
-    title: 'Other',
-    list: ['Scrum', 'Agile'],
-  },
-];
-
 const Content = () => {
   const [value, setValue] = React.useState(0);
 
@@ -78,6 +60,7 @@ const Content = () => {
           <Tabs 
             value={value} 
             onChange={handleChange} 
+            id="about-section"
             aria-label="about-section"
             sx={{
               "& button:hover" : {
@@ -91,7 +74,7 @@ const Content = () => {
             textColor='black'>
             <Tab label="MY BACKGROUND" {...a11yProps(0)} icon={<ProfileIcon/>}/>
             <Tab label="SKILLS" {...a11yProps(1)} icon={<SkillIcon />}/>
-            <Tab label="EXPERIENCE" {...a11yProps(2)} icon={<ExperienceIcon />}/>
+            <Tab label="Projects" {...a11yProps(2)} icon={<ExperienceIcon />}/>
           </Tabs>
         </Box>
         <CustomTabPanel value={value} index={0} className='text'>
@@ -99,7 +82,7 @@ const Content = () => {
             <h1 className='background-title'>MY BACKGROUND</h1>
             <div className='background-content'>
               <div className='content-image'>
-                <img src={ProfileImage} alt='profile picture'></img>
+                <img src={ProfileImage}></img>
               </div>
               <div className='content-text'>
                 <p>
@@ -118,26 +101,7 @@ const Content = () => {
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1} className='text'>
-          <Container>
-            <Grid container spacing={3}>
-              {skills.map((skill, index) => (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                  <Card>
-                    <CardContent>
-                      <Typography variant="h6" gutterBottom>
-                        {skill.title}
-                      </Typography>
-                      <ul>
-                        {skill.list.map((item, i) => (
-                          <li key={i}>{item}</li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          </Container>
+            <Skills />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2} className='text'>
           <Portfolio />

@@ -66,13 +66,11 @@ const Navbar = () => {
             >
               <MenuItem onClick={handleClose}>Home</MenuItem>
               <MenuItem onClick={handleClose}>About</MenuItem>
-              <MenuItem onClick={handleClose}>Project</MenuItem>
               <MenuItem onClick={handleClose}>Contact</MenuItem>
             </Menu>
           <ul className='navbar-option'>
               <li><a href='#'>Home</a></li>
-              <li><a href='#'>About</a></li>
-              <li><a href='#'>Project</a></li>
+              <li><a href='#background-image'>About</a></li>
               <li><a href='#'>Contact</a></li>
           </ul>
         </div>

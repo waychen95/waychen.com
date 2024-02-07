@@ -3,7 +3,6 @@ import './components/Navbar';
 import { Navbar } from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
-import Project from './pages/Project';
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Project />
     </>
   )
 }
