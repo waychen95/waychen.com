@@ -1,6 +1,6 @@
 #skill-page {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
 }
 
 .skill-section {
@@ -16,7 +16,6 @@
 }
 
 .item div {
-  width: 50%;
   text-align: center;
   align-items: center;
   border: 1px solid black;
@@ -27,6 +26,20 @@
 }
 
 .skill-image {
-  margin: auto auto;
-  padding: 1rem;
+  display: grid;
+  align-items: center;
+}
+
+.skill-image img {
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: cover;
+  width:70%;
+}
+
+@media screen and (max-width: 800px) {
+  #skill-page {
+    grid-template-columns: auto;
+    gap: 2rem;
+  }
 }

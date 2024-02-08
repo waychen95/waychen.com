@@ -1,0 +1,17 @@
+#contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-text {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  #contact-section {
+    grid-template-columns: 1fr;
+  }
+}
