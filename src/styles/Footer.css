@@ -3,4 +3,25 @@
   color: white;
   text-align: center;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: auto;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.social-link img {
+  width: 8%;
+  height: auto;
+  padding: 1rem;
+}
+
+#linkedin {
+  width: 7%;
 }
