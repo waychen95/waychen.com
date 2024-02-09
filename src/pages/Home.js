@@ -17,6 +17,7 @@ const Home = () => {
           Send
         </Button>
       </div>
+      <div id='empty-holder'></div>
     </div>
   )
 }

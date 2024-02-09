@@ -1,5 +1,5 @@
 import React from 'react'
-import TechImage from '../assets/tech.jpg'
+import TechImage from '../assets/skillImage.png'
 
 function Skills() {
   return (

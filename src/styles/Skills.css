@@ -18,28 +18,38 @@
 .item div {
   text-align: center;
   align-items: center;
-  border: 1px solid black;
+  border: 3px solid rgb(198, 196, 196);
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.774);
-  color: aliceblue;
+  background-color: rgba(244, 246, 247, 0.746);
+  color: rgb(0, 0, 0);
   font-size: larger;
 }
 
 .skill-image {
   display: grid;
   align-items: center;
+  padding: 1rem;
 }
 
 .skill-image img {
   margin-right: auto;
   margin-left: auto;
   object-fit: cover;
-  width:70%;
+  width:50%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #skill-page {
     grid-template-columns: auto;
     gap: 2rem;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .skill-image {
+    margin-top: 2rem;
   }
 }

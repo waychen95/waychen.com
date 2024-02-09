@@ -41,7 +41,7 @@ const Navbar = () => {
       <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
         <div className={`left-side ${toggle ? 'open' : ''}`}>
           <div className={`logo ${toggle ? 'open' : ''}`}>
-            <img src={WebsiteLogo} alt='website-logo' className='website-logo'></img>
+            <a href='#'><img src={WebsiteLogo} alt='website-logo' className='website-logo'></img></a>
           </div>
         </div>
         <div className='navbar-section' onClick={handleToggle}>
@@ -64,14 +64,14 @@ const Navbar = () => {
                 'aria-labelledby': 'basic-button',
               }}
             >
-              <MenuItem onClick={handleClose}>Home</MenuItem>
+              <MenuItem onClick={handleClose} href='#'>Home</MenuItem>
               <MenuItem onClick={handleClose}>About</MenuItem>
               <MenuItem onClick={handleClose}>Contact</MenuItem>
             </Menu>
           <ul className='navbar-option'>
               <li><a href='#'>Home</a></li>
-              <li><a href='#background-image'>About</a></li>
-              <li><a href='#'>Contact</a></li>
+              <li><a href='#empty-holder'>About</a></li>
+              <li><a href='#contact-section'>Contact</a></li>
           </ul>
         </div>
       </nav> 

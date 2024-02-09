@@ -11,7 +11,7 @@
 .navbar.sticky {
   position: fixed;
   top: 0;
-  background-color: #33333367; /* Add a background color for the sticky navbar */
+  background-color: #edededa2; /* Add a background color for the sticky navbar */
   z-index: 1000;
   padding: 1rem 0 1rem;
 }
@@ -87,8 +87,6 @@
 }
 
 @media screen and (max-width: 800px) {
-
-
   .navbar-option {
     display: none;
     flex-direction: column;

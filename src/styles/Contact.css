@@ -1,9 +1,19 @@
 #contact-section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   padding: 1rem;
   align-items: center;
   height: 100vh;
+}
+
+.contact-form {
+  padding: 1rem;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
 }
 
 .contact-text {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardContent, Grid, TextField, Typography} from '@mui/material';
+import {Grid, TextField} from '@mui/material';
 import Button from '@mui/material/Button';
 import '../styles/Contact.css';
 
@@ -7,17 +7,15 @@ function Contact() {
   return (
     <div id='contact-section'>
       <div className='contact-text'>
-        <h1>CONTACT US</h1>
+        <h1>CONTACT</h1>
       </div>
-      <Card>
-        <CardContent className='contact-card'>
-          <Typography>Fill up the form</Typography>
-          <form>
-            <Grid container>
+      <div>
+        <form className='contact-form'>
+            <Grid container className='contact-grid'>
               <Grid xs={12} sm={6}>
                 <TextField label="First Name" placeholder='Enter first name' variant='outlined' fullWidth required></TextField>
               </Grid>
-              <Grid xs={12} sm={6}>
+              <Grid xs={12} sm={5}>
                 <TextField label="Last Name" placeholder='Enter last name' variant='outlined' fullWidth required></TextField>
               </Grid>
               <Grid xs={12} item>
@@ -34,8 +32,7 @@ function Contact() {
               </Grid>
             </Grid>
           </form>
-        </CardContent>
-      </Card>
+      </div>
     </div>
   )
 }
