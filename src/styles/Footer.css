@@ -22,6 +22,10 @@
   padding: 1rem;
 }
 
+.social-link img:hover {
+  cursor: pointer;
+}
+
 #linkedin {
   width: 7%;
 }

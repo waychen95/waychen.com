@@ -11,7 +11,7 @@
 .navbar.sticky {
   position: fixed;
   top: 0;
-  background-color: #edededab; /* Add a background color for the sticky navbar */
+  background-color: #edededab;
   z-index: 1000;
   padding: 1rem 0 1rem;
 }
@@ -59,7 +59,7 @@
 .navbar-option a {
   margin-right: 20px;
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .navbar-option a:hover {

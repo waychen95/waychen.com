@@ -7,7 +7,7 @@ import LinkedIn from '../assets/linkedin.png';
 import Github from '../assets/git.png';
 
 
-const color = lightBlue[900];
+const color = lightBlue[800];
 
 function Submit() {
 

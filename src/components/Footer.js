@@ -3,6 +3,8 @@ import '../styles/Footer.css';
 import LinkedIn from '../assets/linkedin.png';
 import Github from '../assets/git.png';
 
+
+
 const Footer = () => {
 
   return (
