@@ -1,9 +1,0 @@
-.portfolio-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.MuiCardContent-root {
-  height: 100%;
-}

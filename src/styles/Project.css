@@ -1,0 +1,19 @@
+#project-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 80%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  #project-cards {
+    grid-template-columns: 1fr;
+    width: auto;
+    gap: 2rem;
+  }
+}
+

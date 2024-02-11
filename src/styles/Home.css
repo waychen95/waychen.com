@@ -9,9 +9,33 @@
   background-size: cover;
 }
 
+.container {
+  position: relative;
+}
+
+#background-image {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
 .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   text-align: left;
-  height: 50%;
-  width: 60%;
-  padding: 2rem;
+}
+
+#background-image {
+  filter: brightness(60%);
+}
+
+@media screen and (max-width: 800px) {
+  .banner-text {
+    font-size: small;
+  }
 }

@@ -37,16 +37,9 @@ function Skills() {
             <div>InteliJ</div>
           </div>
         </div>
-        <div className='skills'>
-          <h1>Other</h1>
-          <div className='item'>
-            <div>Scrum</div>
-            <div>Agile</div>
-          </div>
-        </div>
       </div>
       <div className='skill-image'>
-        <img src={TechImage}></img>
+        <img src={TechImage} alt='software'></img>
       </div>
       
     </div>

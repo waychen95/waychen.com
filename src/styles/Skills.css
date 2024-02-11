@@ -1,6 +1,6 @@
 #skill-page {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
 }
 
 .skill-section {
@@ -13,6 +13,10 @@
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 1rem;
+  width: 70%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .item div {
@@ -38,7 +42,14 @@
   width:50%;
 }
 
-@media screen and (max-width: 900px) {
+.skills h1 {
+  text-align: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 850px) {
   #skill-page {
     grid-template-columns: auto;
     gap: 2rem;
@@ -51,5 +62,9 @@
 
   .skill-image {
     margin-top: 2rem;
+  }
+
+  .skills h1 {
+    text-align: center;
   }
 }

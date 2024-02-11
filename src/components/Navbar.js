@@ -6,6 +6,7 @@ import WebsiteLogo from '../assets/websitelogo.png';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { grey } from '@mui/material/colors';
 
 const Navbar = () => {
   const [isSticky, setSticky] = useState(false);
@@ -52,6 +53,7 @@ const Navbar = () => {
               aria-expanded={open ? 'true' : undefined}
               className={`hamburgerMenu ${toggle ? 'open' : ''}`}
               onClick={handleClick}
+              style={{color: grey[900]}}
             >
               <FaBars size="30" className={`hamburgerMenu ${toggle ? 'open' : ''}`}/>
             </Button>
@@ -64,9 +66,9 @@ const Navbar = () => {
                 'aria-labelledby': 'basic-button',
               }}
             >
-              <MenuItem onClick={handleClose} href='#'>Home</MenuItem>
-              <MenuItem onClick={handleClose}>About</MenuItem>
-              <MenuItem onClick={handleClose}>Contact</MenuItem>
+              <MenuItem href='#'>Home</MenuItem>
+              <MenuItem href='#empty-holder'>About</MenuItem>
+              <MenuItem href='#contact-section'>Contact</MenuItem>
             </Menu>
           <ul className='navbar-option'>
               <li><a href='#'>Home</a></li>

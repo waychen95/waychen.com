@@ -4,6 +4,7 @@
   padding: 1rem;
   align-items: center;
   height: 100vh;
+  background-color: #6677CC;
 }
 
 .contact-form {
@@ -16,12 +17,45 @@
   align-items: center;
 }
 
+.contact-name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .contact-text {
-  text-align: center;
+  text-align: left;
+  padding: 2rem;
+  color: aliceblue;
+}
+
+.contact-text h1 {
+  font-size: 50px;
+}
+
+.contact-text p {
+  font-size: 24px;
 }
 
 @media screen and (max-width: 800px) {
   #contact-section {
     grid-template-columns: 1fr;
+  }
+
+  .contact-text {
+    text-align: center;
+  }
+
+  .contact-name {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-text h1 {
+    font-size: 40px;
+  }
+  
+  .contact-text p {
+    font-size: 20px;
   }
 }

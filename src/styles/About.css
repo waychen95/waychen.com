@@ -7,6 +7,7 @@
   margin-right: auto;
   padding: 1rem;
   margin-top: 7rem;
+  height: 100vh;
 }
 
 .text {
@@ -19,4 +20,5 @@
   .about-box {
     height: 100%;
   }
+
 }

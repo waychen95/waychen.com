@@ -8,11 +8,11 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div>
-        <p>&copy; {new Date().getFullYear()} Your Website Name</p>
+        <p>&copy; Wayne Chen</p>
       </div>
       <div className='social-link'>
-        <img id='linkedin' src={LinkedIn}></img>
-        <img src={Github}></img>
+        <img id='linkedin' src={LinkedIn} alt='linkedin logo'></img>
+        <img src={Github} alt='github logo'></img>
       </div>
     </footer>
   );
