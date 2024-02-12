@@ -24,8 +24,8 @@ function Contact() {
           Whether you've got a cool project idea, want to team up, or simply want to chat, I'm here for it. 
           Let's make something awesome happen together!
         </p>
-        <div className='social-link'>
-          <img id='linkedin' src={LinkedIn} alt='linkedin logo'></img>
+        <div className='social-link-contact'>
+          <img id='linkedinContact' src={LinkedIn} alt='linkedin logo'></img>
           <img src={Github} alt='github logo'></img>
         </div>
       </div>

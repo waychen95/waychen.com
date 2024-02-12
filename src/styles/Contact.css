@@ -37,6 +37,27 @@
   font-size: 24px;
 }
 
+.social-link-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.social-link-contact img {
+  width: 8%;
+  height: auto;
+  padding: 1rem;
+}
+
+.social-link-contact img:hover {
+  cursor: pointer;
+}
+
+#linkedin {
+  width: 7%;
+}
+
 @media screen and (max-width: 800px) {
   #contact-section {
     grid-template-columns: 1fr;

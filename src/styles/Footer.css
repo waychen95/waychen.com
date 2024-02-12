@@ -29,3 +29,13 @@
 #linkedin {
   width: 7%;
 }
+
+@media screen and (max-width: 800px) {
+  .footer {
+    grid-template-columns: auto;
+  }
+  
+  .social-link {
+    display: none;
+  }
+}
