@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  height: auto;
+  height: 20%;
 }
 
 .social-link {
@@ -17,7 +17,7 @@
 }
 
 .social-link img {
-  width: 8%;
+  width: 6%;
   height: auto;
   padding: 1rem;
 }
@@ -27,7 +27,7 @@
 }
 
 #linkedin {
-  width: 7%;
+  width: 5%;
 }
 
 @media screen and (max-width: 800px) {

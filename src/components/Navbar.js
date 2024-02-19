@@ -6,9 +6,14 @@ import WebsiteLogo from '../assets/websitelogo.png';
 import Button from '@mui/material/Button';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
-import Divider, { ListItemIcon, ListItemText } from '@mui/material';
 import { grey } from '@mui/material/colors';
-import { ListItemButton } from '@mui/material';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import HomeIcon from '@mui/icons-material/Home';
+import InfoIcon from '@mui/icons-material/Info';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
 
 const drawerWidth = 240;
 
@@ -72,16 +77,24 @@ const Navbar = () => {
             }}
           >
             <List className='hamburger-buttons'>
-              <ListItemButton button component="a" href="#">
-                <ListItemIcon></ListItemIcon>
-                <ListItemText>Home</ListItemText>
-              </ListItemButton>
-              <ListItemButton button component="a" href="#empty-holder">
-                About
-              </ListItemButton>
-              <ListItemButton button component="a" href="#contact-section">
-                Contact
-              </ListItemButton>
+              <ListItem disablePadding>
+                <ListItemButton button component="a" href="#">
+                  <ListItemIcon><HomeIcon fontSize='medium'/></ListItemIcon>
+                  <ListItemText>Home</ListItemText>
+                </ListItemButton>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton button component="a" href="#empty-holder">
+                  <ListItemIcon><InfoIcon fontSize='medium'/></ListItemIcon>
+                  <ListItemText>About</ListItemText>
+                </ListItemButton>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton button component="a" href="#contact-section">
+                  <ListItemIcon><ContactMailIcon fontSize='medium'/></ListItemIcon>
+                  <ListItemText>Contact</ListItemText>
+                </ListItemButton>
+              </ListItem>
             </List>
           </Drawer>
           <ul className='navbar-option'>

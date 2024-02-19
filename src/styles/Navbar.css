@@ -6,7 +6,6 @@
   transition: background-color 0.3s ease;
   width: 100%;
   padding: 1rem 0 1rem;
-  height: min-content;
 }
 
 .navbar.sticky {
