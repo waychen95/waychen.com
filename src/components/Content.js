@@ -11,7 +11,6 @@ import ProfileImage from '../assets/profile_picture.jpeg';
 import '../styles/Content.css';
 import Project from './Project';
 import Skills from './Skills';
-import '../styles/Skills.css';
 
 
 
@@ -73,12 +72,12 @@ const Content = () => {
         </Box>
         <CustomTabPanel value={value} index={0} className='text'>
           <div className='background-section'>
-            <h1 className='background-title'>BACKGROUND</h1>
             <div className='background-content'>
               <div className='content-image'>
                 <img src={ProfileImage}></img>
               </div>
               <div className='content-text'>
+                <h1>BACKGROUND</h1>
                 <p>
                   Hello! I'm Wayne Chen, a Term 2 student in the Computer System Technology program at BCIT.
                   Currently seeking a co-op opportunity.<br></br><br></br>

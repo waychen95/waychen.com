@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import '../styles/Navbar.css';
-import {FaBars} from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import WebsiteLogo from '../assets/websitelogo.png';
 import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
+import Divider, { ListItemIcon, ListItemText } from '@mui/material';
 import { grey } from '@mui/material/colors';
+import { ListItemButton } from '@mui/material';
+
+const drawerWidth = 240;
 
 const Navbar = () => {
   const [isSticky, setSticky] = useState(false);
@@ -28,13 +32,18 @@ const Navbar = () => {
     };
   }, []);
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const toggleDrawer = (open) => (event) => {
+    if (
+      event &&
+      event.type === 'keydown' &&
+      (event.key === 'Tab' || event.key === 'Shift')
+    ) {
+      return;
+    }
+
+    setDrawerOpen(open);
   };
 
   return (
@@ -47,38 +56,43 @@ const Navbar = () => {
         </div>
         <div className='navbar-section' onClick={handleToggle}>
           <Button
-              id="basic-button"
-              aria-controls={open ? 'basic-menu' : undefined}
-              aria-haspopup="true"
-              aria-expanded={open ? 'true' : undefined}
-              className={`hamburgerMenu ${toggle ? 'open' : ''}`}
-              onClick={handleClick}
-              style={{color: grey[900]}}
-            >
-              <FaBars size="30" className={`hamburgerMenu ${toggle ? 'open' : ''}`}/>
-            </Button>
-            <Menu
-              id="basic-menu"
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              MenuListProps={{
-                'aria-labelledby': 'basic-button',
-              }}
-            >
-              <MenuItem href='#'>Home</MenuItem>
-              <MenuItem href='#empty-holder'>About</MenuItem>
-              <MenuItem href='#contact-section'>Contact</MenuItem>
-            </Menu>
+            id="basic-button"
+            className={`hamburgerMenu ${toggle ? 'open' : ''}`}
+            onClick={toggleDrawer(true)}
+            style={{ color: grey[900] }}
+          >
+            <FaBars size="30" className={`hamburgerMenu ${toggle ? 'open' : ''}`} />
+          </Button>
+          <Drawer
+            anchor="right"
+            open={drawerOpen}
+            onClose={toggleDrawer(false)}
+            sx={{
+              '& .MuiDrawer-paper': {width: drawerWidth }
+            }}
+          >
+            <List className='hamburger-buttons'>
+              <ListItemButton button component="a" href="#">
+                <ListItemIcon></ListItemIcon>
+                <ListItemText>Home</ListItemText>
+              </ListItemButton>
+              <ListItemButton button component="a" href="#empty-holder">
+                About
+              </ListItemButton>
+              <ListItemButton button component="a" href="#contact-section">
+                Contact
+              </ListItemButton>
+            </List>
+          </Drawer>
           <ul className='navbar-option'>
-              <li><a href='#'>Home</a></li>
-              <li><a href='#empty-holder'>About</a></li>
-              <li><a href='#contact-section'>Contact</a></li>
+            <li><a href='#'>Home</a></li>
+            <li><a href='#empty-holder'>About</a></li>
+            <li><a href='#contact-section'>Contact</a></li>
           </ul>
         </div>
-      </nav> 
+      </nav>
     </>
   );
 }
 
-export {Navbar};
+export { Navbar };

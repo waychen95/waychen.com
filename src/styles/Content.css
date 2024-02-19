@@ -1,12 +1,30 @@
+.background-section {
+  
+}
 
 .background-content {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+.background-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.background-title h1 {
+  grid-column: 2;
+}
+
+.content-image {
+  display: grid;
+  align-items: center;
 }
 
 .content-image img {
-  width: 90%;
-  min-width: 430px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -20,6 +38,7 @@
 @media screen and (max-width: 800px) {
   .background-content {
     grid-template-columns: auto;
+    grid-template-rows: auto auto;
   }
 
   .background-section {
@@ -27,7 +46,7 @@
   }
 
   .content-image img {
-    width: 90%;
+    width: 100%;
     min-width: none;
   }
 }

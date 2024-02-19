@@ -6,6 +6,7 @@ const About = () => {
 
   return (
     <div className='about-box'>
+      <div id='empty-holder'></div>
       <Content />
     </div>
 
