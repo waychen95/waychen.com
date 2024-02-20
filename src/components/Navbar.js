@@ -71,12 +71,13 @@ const Navbar = () => {
           <Drawer
             anchor="right"
             open={drawerOpen}
+            className='customer-drawer'
             onClose={toggleDrawer(false)}
             sx={{
               '& .MuiDrawer-paper': {width: drawerWidth }
             }}
           >
-            <List className='hamburger-buttons'>
+            <List className='custom-list'>
               <ListItem disablePadding>
                 <ListItemButton button component="a" href="#">
                   <ListItemIcon><HomeIcon fontSize='medium'/></ListItemIcon>
