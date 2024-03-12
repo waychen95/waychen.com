@@ -90,4 +90,8 @@
     padding: 2rem;
     border-radius: 3%;
   }
+
+  .social-link-contact img {
+    width: 15%
+  }
 }

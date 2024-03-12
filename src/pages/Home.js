@@ -9,7 +9,7 @@ import { lightBlue } from '@mui/material/colors';
 const Home = () => {
   const [text, setText] = useState('');
   const phrases = [
-    "Hi, my name is Wayne. I am a developer currently looking for co-op. Feel free to contact me!"
+    "Hi, I'm Wayne Chen, a passionate Full Stack Developer who loves coding!"
   ];
 
   useEffect(() => {
@@ -45,6 +45,7 @@ const Home = () => {
           <div className='typing-text'>
             <h1 className='text'>{text}<span className="cursor">|</span></h1>
           </div>
+          <p>With expertise in JavaScript, React, Bootstrap, and more, I specialize in crafting user-friendly experiences that captivate and inspire. Join me as we explore the art of web development together.</p>
           <a href={Resume} target="_blank" rel="noopener noreferrer">
             <Button color='primary' variant="contained" style={{backgroundColor: lightBlue[700]}} endIcon={<ResumeIcon />}>
               Resume

@@ -49,7 +49,7 @@ const Project = () => {
               | React, Material UI, JavaScript, HTML, CSS
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Developed a personal portfolio using React to showcase my work and experience.
+              A personal portfolio utilizes React and Material UI to showcase my work and experience.
             </Typography>
           </CardContent>
         </CardActionArea>

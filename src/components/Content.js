@@ -64,7 +64,7 @@ const Content = () => {
             onChange={handleChange} 
             id="about-section"
             aria-label="about-section"
-            variant="scrollable"
+            variant="fullWidth"
             TabIndicatorProps={{ 
             style: {
               backgroundColor: "black",

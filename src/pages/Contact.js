@@ -12,6 +12,14 @@ import Alert from '@mui/material/Alert';
 
 const color = lightBlue[800];
 
+function linkedin() {
+  window.open('https://www.linkedin.com/in/wayne-chen-156518203/', '_blank');
+}
+
+function github() {
+  window.open('https://github.com/waychen95', '_blank')
+}
+
 function Contact() {
 
   const form = useRef();
@@ -77,8 +85,8 @@ function Contact() {
           Let's make something awesome happen together!
         </p>
         <div className='social-link-contact'>
-          <img id='linkedinContact' src={LinkedIn} alt='linkedin logo'></img>
-          <img src={Github} alt='github logo'></img>
+          <img id='linkedinContact' src={LinkedIn} alt='linkedin logo' onClick={linkedin}></img>
+          <img src={Github} alt='github logo' onClick={github}></img>
         </div>
       </div>
       <div>
