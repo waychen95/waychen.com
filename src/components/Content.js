@@ -48,10 +48,10 @@ const Content = () => {
     setValue(newValue);
   };
 
-  useEffect(() => {
-    // Applying the CSS style dynamically
-    document.querySelector('.css-heg063-MuiTabs-flexContainer').style.justifyContent = 'space-around';
-  }, []);
+  // useEffect(() => {
+  //   // Applying the CSS style dynamically
+  //   document.querySelector('.css-heg063-MuiTabs-flexContainer').style.justifyContent = 'space-around';
+  // }, []);
 
   return (
     <Box>
@@ -65,6 +65,7 @@ const Content = () => {
             TabIndicatorProps={{ 
             style: {
               backgroundColor: "black",
+              justifyContent: 'space-around'
             }}}
             sx={{
               "& button:hover" : {
