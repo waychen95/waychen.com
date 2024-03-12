@@ -11,7 +11,6 @@ import ProfileImage from '../assets/profile_picture.jpeg';
 import '../styles/Content.css';
 import Project from './Project';
 import Skills from './Skills';
-import { useEffect } from 'react';
 
 
 
@@ -55,7 +54,11 @@ const Content = () => {
 
   return (
     <Box>
-        <Box>
+        <Box sx={{
+        display: 'flex',
+        width: '100%',
+        justifyContent: 'space-around',
+        }}>
           <Tabs 
             value={value} 
             onChange={handleChange} 
@@ -65,12 +68,7 @@ const Content = () => {
             TabIndicatorProps={{ 
             style: {
               backgroundColor: "black",
-              justifyContent: 'space-around'
             }}}
-            sx={{
-              "& button:hover" : {
-              },
-            }}
             textColor='black'>
             <Tab label="BACKGROUND" value={0} icon={<ProfileIcon/>}/>
             <Tab label="SKILLS" value={1} icon={<SkillIcon />}/>
