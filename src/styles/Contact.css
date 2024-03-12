@@ -9,7 +9,7 @@
 }
 
 .contact-form {
-  padding: 2rem;
+  padding: 4rem 2rem 4rem 2rem;
   background-color: white;
   border-radius: 5%;
 }
@@ -84,5 +84,10 @@
   
   .contact-text p {
     font-size: 20px;
+  }
+
+  .contact-form {
+    padding: 2rem;
+    border-radius: 3%;
   }
 }

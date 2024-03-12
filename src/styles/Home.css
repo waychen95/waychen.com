@@ -30,6 +30,26 @@
   text-align: left;
 }
 
+.text {
+  font-size: 30px !important
+}
+
+.cursor {
+  animation: blink 1s infinite; /* Blink animation */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 #background-image {
   filter: brightness(60%);
 }
@@ -37,5 +57,7 @@
 @media screen and (max-width: 800px) {
   .banner-text {
     font-size: small;
+    width: 60%;
+    left: 40%;
   }
 }

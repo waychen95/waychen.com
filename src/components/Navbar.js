@@ -15,11 +15,10 @@ import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 
-const drawerWidth = 240;
-
 const Navbar = () => {
   const [isSticky, setSticky] = useState(false);
   const [toggle, setToggle] = useState(false);
+
 
   const handleScroll = () => {
     setSticky(window.scrollY > 0);
@@ -69,29 +68,26 @@ const Navbar = () => {
             <FaBars size="30" className={`hamburgerMenu ${toggle ? 'open' : ''}`} />
           </Button>
           <Drawer
-            anchor="right"
+            anchor="top"
             open={drawerOpen}
             className='customer-drawer'
             onClose={toggleDrawer(false)}
-            sx={{
-              '& .MuiDrawer-paper': {width: drawerWidth }
-            }}
           >
-            <List className='custom-list'>
+            <List className='custom-list' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <ListItem disablePadding>
                 <ListItemButton button component="a" href="#">
                   <ListItemIcon><HomeIcon fontSize='medium'/></ListItemIcon>
                   <ListItemText>Home</ListItemText>
                 </ListItemButton>
               </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton button component="a" href="#empty-holder">
+              <ListItem disablePadding style={{ width: '100%', textAlign: 'center' }}>
+                <ListItemButton onClick={() => window.scrollTo(0, document.getElementById('empty-holder').offsetTop)}>
                   <ListItemIcon><InfoIcon fontSize='medium'/></ListItemIcon>
                   <ListItemText>About</ListItemText>
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton button component="a" href="#contact-section">
+                <ListItemButton onClick={() => window.scrollTo(0, document.getElementById('contact-section').offsetTop)}>
                   <ListItemIcon><ContactMailIcon fontSize='medium'/></ListItemIcon>
                   <ListItemText>Contact</ListItemText>
                 </ListItemButton>

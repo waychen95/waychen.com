@@ -74,7 +74,7 @@ const Content = () => {
           <div className='background-section'>
             <div className='background-content'>
               <div className='content-image'>
-                <img src={ProfileImage}></img>
+                <img src={ProfileImage} alt='wayne'></img>
               </div>
               <div className='content-text'>
                 <h1>BACKGROUND</h1>
