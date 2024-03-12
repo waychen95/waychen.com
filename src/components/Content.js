@@ -11,6 +11,7 @@ import ProfileImage from '../assets/profile_picture.jpeg';
 import '../styles/Content.css';
 import Project from './Project';
 import Skills from './Skills';
+import { useEffect } from 'react';
 
 
 
@@ -46,6 +47,11 @@ const Content = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  useEffect(() => {
+    // Applying the CSS style dynamically
+    document.querySelector('.css-heg063-MuiTabs-flexContainer').style.justifyContent = 'space-around';
+  }, []);
 
   return (
     <Box>
