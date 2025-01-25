@@ -34,9 +34,9 @@ function Skills() {
         <div className='skills'>
           <h1>Language</h1>
           <div className='item'>
-            <div>JavaScript</div>
-            <div>Java</div>
             <div>Python</div>
+            <div>Java</div>
+            <div>JavaScript</div>
             <div>C</div>
             <div>R</div>
           </div>
@@ -44,13 +44,18 @@ function Skills() {
         <div className='skills'>
           <h1>Web & Database</h1>
           <div className='item'>
-            <div>Bootstrap</div>
             <div>React</div>
+            <div>Vite</div>
             <div>Node</div>
+            <div>Express</div>
             <div>HTML</div>
             <div>CSS</div>
-            <div>Firebase</div>
+            <div>Bootstrap</div>
+            <div>PostgreSQL</div>
             <div>MySQL</div>
+            <div>Firebase</div>
+            <div>MongoDB</div>
+            <div>Neo4j</div>
           </div>
         </div>
         <div className='skills'>
@@ -58,9 +63,9 @@ function Skills() {
           <div className='item'>
             <div>Git</div>
             <div>Visual Studio</div>
-            <div>Eclipse</div>
             <div>PyCharm</div>
             <div>InteliJ</div>
+            <div>Eclipse</div>
           </div>
         </div>
       </div>
@@ -74,9 +79,9 @@ function Skills() {
             <StyledStack spacing={2}>
               {toggleSections['language'] && (
                 <>
-                  <Paper>JavaScript</Paper>
-                  <Paper>Java</Paper>
                   <Paper>Python</Paper>
+                  <Paper>Java</Paper>
+                  <Paper>JavaScript</Paper>
                   <Paper>C</Paper>
                   <Paper>R</Paper>
                 </>
@@ -91,13 +96,18 @@ function Skills() {
             <StyledStack spacing={2}>
               {toggleSections['webDatabase'] && (
                 <>
-                  <Paper>Bootstrap</Paper>
                   <Paper>React</Paper>
+                  <Paper>Vite</Paper>
                   <Paper>Node</Paper>
+                  <Paper>Express</Paper>
                   <Paper>HTML</Paper>
                   <Paper>CSS</Paper>
-                  <Paper>Firebase</Paper>
+                  <Paper>Bootstrap</Paper>
+                  <Paper>PostgreSQL</Paper>
                   <Paper>MySQL</Paper>
+                  <Paper>Firebase</Paper>
+                  <Paper>MongoDB</Paper>
+                  <Paper>Neo4j</Paper>
                 </>
               )}
             </StyledStack>
@@ -112,9 +122,9 @@ function Skills() {
                 <>
                   <Paper>Git</Paper>
                   <Paper>Visual Studio</Paper>
-                  <Paper>Eclipse</Paper>
                   <Paper>PyCharm</Paper>
-                  <Paper>IntelliJ</Paper>
+                  <Paper>InteliJ</Paper>
+                  <Paper>Eclipse</Paper>
                 </>
               )}
             </StyledStack>

@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div>
-        <p>&copy; Wayne Chen</p>
+        <p>&copy;waychen.com</p>
       </div>
       <div className='social-link'>
         <img id='linkedin' src={LinkedIn} alt='linkedin logo' onClick={linkedin}></img>

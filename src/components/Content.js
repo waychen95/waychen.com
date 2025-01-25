@@ -69,7 +69,15 @@ const Content = () => {
             style: {
               backgroundColor: "black",
             }}}
-            textColor='black'>
+            textColor='inherit'
+            sx={{
+              '& .MuiTab-root': {
+                color: 'black', // Sets text color to black
+              },
+              '& .Mui-selected': {
+                color: 'black', // Sets text color of selected tab to black
+              },
+            }}>
             <Tab label="BACKGROUND" value={0} icon={<ProfileIcon/>}/>
             <Tab label="SKILLS" value={1} icon={<SkillIcon />}/>
             <Tab label="Projects" value={2} icon={<ExperienceIcon />}/>
@@ -84,12 +92,14 @@ const Content = () => {
               <div className='content-text'>
                 <h1>BACKGROUND</h1>
                 <p>
-                  Hello! I'm Wayne Chen, a Term 2 student in the Computer System Technology program at BCIT.
-                  Currently seeking a co-op opportunity.<br></br><br></br>
-                  Proficient in languages like JavaScript, Java, Python, and more, I bring a solid foundation in programming and web development.<br></br><br></br> 
-                  My experience includes roles as an Education Coordinator and Research Assistant, showcasing my organizational and collaborative skills.<br></br><br></br> 
-                  I am eager to apply my skills in a real-world setting. 
-                  With a focus on programming and web technologies, I am ready to contribute effectively to a dynamic team.<br></br><br></br>
+                  Hello! I'm Wayne Chen, a Term 3 student in the Computer System Technology program at BCIT.  
+                  Currently seeking a co-op opportunity.<br></br><br></br>  
+                  Proficient in languages like Python, Java, JavaScript, and more, I bring a solid foundation in programming and web development.<br></br><br></br>  
+                  During my co-op at IOTO, I focused on data collection using BeautifulSoup and Selenium, database management with Neo4j using Cypher queries, API endpoint development, and designing and building web pages to present data visually.  
+                  Notably, I developed the Legislator Analysis and US Battleground pages, structuring US political data efficiently for user interaction and reporting.<br></br><br></br>  
+                  My experience also includes roles as an Education Coordinator and Research Assistant, showcasing my organizational and collaborative skills.<br></br><br></br>  
+                  I am eager to apply my skills in a real-world setting.  
+                  With a focus on programming and web technologies, I am ready to contribute effectively to a dynamic team.<br></br><br></br>  
                 </p>
               </div>
             </div>
