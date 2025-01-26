@@ -36,6 +36,9 @@
   height: 100%;
   letter-spacing: 0.5px;
   font-size: large;
+  width: 80%;
+  padding: 1rem;
+  margin-right: auto;
   
 }
 
@@ -53,6 +56,11 @@
   .content-image img {
     width: 100%;
     min-width: none;
+  }
+
+  .content-text {
+    width: 100%;
+    padding: 0;
   }
 }
 
