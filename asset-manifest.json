@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/waychen.com/static/css/main.5b27b529.css",
+    "main.css": "/waychen.com/static/css/main.0db42574.css",
     "main.js": "/waychen.com/static/js/main.0df0bb41.js",
     "static/js/592.6a3b86e1.chunk.js": "/waychen.com/static/js/592.6a3b86e1.chunk.js",
     "static/media/nbadle.png": "/waychen.com/static/media/nbadle.24cbcc18baaf42831182.png",
@@ -12,12 +12,12 @@
     "static/media/git.png": "/waychen.com/static/media/git.9dd1368b0e7ab37d455a.png",
     "static/media/software.png": "/waychen.com/static/media/software.27180b9595f38a6fcd16.png",
     "index.html": "/waychen.com/index.html",
-    "main.5b27b529.css.map": "/waychen.com/static/css/main.5b27b529.css.map",
+    "main.0db42574.css.map": "/waychen.com/static/css/main.0db42574.css.map",
     "main.0df0bb41.js.map": "/waychen.com/static/js/main.0df0bb41.js.map",
     "592.6a3b86e1.chunk.js.map": "/waychen.com/static/js/592.6a3b86e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b27b529.css",
+    "static/css/main.0db42574.css",
     "static/js/main.0df0bb41.js"
   ]
 }
