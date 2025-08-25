@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/waychen.com/static/css/main.0db42574.css",
-    "main.js": "/waychen.com/static/js/main.0df0bb41.js",
+    "main.js": "/waychen.com/static/js/main.9b91a568.js",
     "static/js/592.6a3b86e1.chunk.js": "/waychen.com/static/js/592.6a3b86e1.chunk.js",
+    "static/media/pokemon.png": "/waychen.com/static/media/pokemon.268c97468ee80ed409ef.png",
     "static/media/nbadle.png": "/waychen.com/static/media/nbadle.24cbcc18baaf42831182.png",
     "static/media/backgroundImage.png": "/waychen.com/static/media/backgroundImage.99768943800d76b62782.png",
     "static/media/city.jpeg": "/waychen.com/static/media/city.998ff4f56a8e1663699d.jpeg",
+    "static/media/resume.pdf": "/waychen.com/static/media/resume.8e8a3343141a867eb595.pdf",
     "static/media/profile_picture.jpeg": "/waychen.com/static/media/profile_picture.9ab2fbdec487fd82dc6f.jpeg",
-    "static/media/resume.pdf": "/waychen.com/static/media/resume.bf1058604c115ff513b1.pdf",
     "static/media/websitelogo.png": "/waychen.com/static/media/websitelogo.bf4d68b75075a3b632b9.png",
     "static/media/git.png": "/waychen.com/static/media/git.9dd1368b0e7ab37d455a.png",
     "static/media/software.png": "/waychen.com/static/media/software.27180b9595f38a6fcd16.png",
     "index.html": "/waychen.com/index.html",
     "main.0db42574.css.map": "/waychen.com/static/css/main.0db42574.css.map",
-    "main.0df0bb41.js.map": "/waychen.com/static/js/main.0df0bb41.js.map",
+    "main.9b91a568.js.map": "/waychen.com/static/js/main.9b91a568.js.map",
     "592.6a3b86e1.chunk.js.map": "/waychen.com/static/js/592.6a3b86e1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0db42574.css",
-    "static/js/main.0df0bb41.js"
+    "static/js/main.9b91a568.js"
   ]
 }
