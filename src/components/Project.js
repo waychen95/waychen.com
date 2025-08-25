@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import City from '../assets/city.jpeg';
 import NBAdle from '../assets/nbadle.png';
+import Pokemon from '../assets/pokemon.png';
 import '../styles/Project.css';
 import WebsiteLogo from '../assets/websitelogo.png';
 import { CardActionArea } from '@mui/material';
@@ -31,8 +32,13 @@ const handleButtonClick2 = () => {
 };
 
 const handleButtonClick3 = () => {
-  // Redirect to GitHub page
-  window.location.href = 'https://nba-stats-ecru.vercel.app/';
+  // Redirect to NBAdle page
+  window.location.href = 'https://staging.d1glbwndlcoh8o.amplifyapp.com/';
+};
+
+const handleButtonClick4 = () => {
+  // Redirect to pokemon game page
+  window.location.href = 'https://golden-croissant-91909c.netlify.app/';
 };
 
 const Project = () => {
@@ -54,7 +60,28 @@ const Project = () => {
               | React, PostgreSQL, Flask, Python, JavaScript, HTML, CSS
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              NBAdle is a Wordle-inspired web application for NBA enthusiasts. The goal of the game is to guess an NBA player within a limited number of attempts based on various clues.
+              NBAdle is a Wordle-inspired web application for NBA fans to guess the NBA player based on various statistics and clues.
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+      <Card sx={style} className='card'>
+        <CardActionArea onClick={handleButtonClick4}>
+          <CardMedia
+            component="img"
+            alt="pokemon game"
+            height="300"
+            image={Pokemon}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Pokemon Memory Game
+            </Typography>
+            <Typography variant='body1'>
+              | JavaScript, HTML, CSS
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              The Pokemon Memory Game is a fun and interactive game built with JavaScript, HTML, and CSS. Players must match pairs of Pokemon cards while trying to remember their locations.
             </Typography>
           </CardContent>
         </CardActionArea>

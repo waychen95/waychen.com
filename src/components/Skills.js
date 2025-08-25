@@ -37,35 +37,47 @@ function Skills() {
             <div>Python</div>
             <div>Java</div>
             <div>JavaScript</div>
+            <div>C++</div>
             <div>C</div>
             <div>R</div>
           </div>
         </div>
         <div className='skills'>
-          <h1>Web & Database</h1>
+          <h1>Web Development</h1>
           <div className='item'>
             <div>React</div>
-            <div>Vite</div>
-            <div>Node</div>
-            <div>Express</div>
+            <div>Bootstrap</div>
             <div>HTML</div>
             <div>CSS</div>
-            <div>Bootstrap</div>
+            <div>Tailwind CSS</div>
+            <div>Node</div>
+            <div>Express</div>
+            <div>AJAX</div>
+          </div>
+        </div>
+        <div className='skills'>
+          <h1>Database & Cloud</h1>
+          <div className='item'>
             <div>PostgreSQL</div>
             <div>MySQL</div>
             <div>Firebase</div>
             <div>MongoDB</div>
             <div>Neo4j</div>
+            <div>AWS (S3, RDS, EC2, CloudFront)</div>
           </div>
         </div>
         <div className='skills'>
-          <h1>Tech</h1>
+          <h1>Tools</h1>
           <div className='item'>
-            <div>Git</div>
-            <div>Visual Studio</div>
-            <div>PyCharm</div>
-            <div>InteliJ</div>
-            <div>Eclipse</div>
+            <div>Git/GitHub</div>
+            <div>Docker</div>
+          </div>
+        </div>
+        <div className='skills'>
+          <h1>Methodology</h1>
+          <div className='item'>
+            <div>Agile</div>
+            <div>Scrum</div>
           </div>
         </div>
       </div>
@@ -80,51 +92,77 @@ function Skills() {
               {toggleSections['language'] && (
                 <>
                   <Paper>Python</Paper>
-                  <Paper>Java</Paper>
                   <Paper>JavaScript</Paper>
+                  <Paper>Java</Paper>
+                  <Paper>C++</Paper>
                   <Paper>C</Paper>
                   <Paper>R</Paper>
                 </>
               )}
             </StyledStack>
           </div>
-          <div className='skills-hidden' onClick={() => toggleHiddenSection('webDatabase')}>
+          <div className='skills-hidden' onClick={() => toggleHiddenSection('webDev')}>
             <div className='skills-head'>
               <h1>Web & Database</h1>
               <ArrowDropDownIcon/>
             </div>
             <StyledStack spacing={2}>
-              {toggleSections['webDatabase'] && (
+              {toggleSections['webDev'] && (
                 <>
                   <Paper>React</Paper>
-                  <Paper>Vite</Paper>
-                  <Paper>Node</Paper>
-                  <Paper>Express</Paper>
+                  <Paper>Bootstrap</Paper>
                   <Paper>HTML</Paper>
                   <Paper>CSS</Paper>
-                  <Paper>Bootstrap</Paper>
+                  <Paper>Tailwind CSS</Paper>
+                  <Paper>Node</Paper>
+                  <Paper>Express</Paper>
+                  <Paper>AJAX</Paper>
+                </>
+              )}
+            </StyledStack>
+          </div>
+                    <div className='skills-hidden' onClick={() => toggleHiddenSection('dbCloud')}>
+            <div className='skills-head'>
+              <h1>Database & Cloud</h1>
+              <ArrowDropDownIcon/>
+            </div>
+            <StyledStack spacing={2}>
+              {toggleSections['dbCloud'] && (
+                <>
                   <Paper>PostgreSQL</Paper>
                   <Paper>MySQL</Paper>
                   <Paper>Firebase</Paper>
                   <Paper>MongoDB</Paper>
                   <Paper>Neo4j</Paper>
+                  <Paper>AWS (S3, RDS, EC2, CloudFront)</Paper>
                 </>
               )}
             </StyledStack>
           </div>
-          <div className='skills-hidden' onClick={() => toggleHiddenSection('tech')}>
+          <div className='skills-hidden' onClick={() => toggleHiddenSection('tool')}>
             <div className='skills-head'>
-              <h1>Tech</h1>
+              <h1>Tool</h1>
               <ArrowDropDownIcon/>
             </div>
             <StyledStack spacing={2}>
-              {toggleSections['tech'] && (
+              {toggleSections['tool'] && (
                 <>
-                  <Paper>Git</Paper>
-                  <Paper>Visual Studio</Paper>
-                  <Paper>PyCharm</Paper>
-                  <Paper>InteliJ</Paper>
-                  <Paper>Eclipse</Paper>
+                  <Paper>Git/GitHub</Paper>
+                  <Paper>Docker</Paper>
+                </>
+              )}
+            </StyledStack>
+          </div>
+          <div className='skills-hidden' onClick={() => toggleHiddenSection('methodology')}>
+            <div className='skills-head'>
+              <h1>Methodology</h1>
+              <ArrowDropDownIcon/>
+            </div>
+            <StyledStack spacing={2}>
+              {toggleSections['methodology'] && (
+                <>
+                  <Paper>Agile</Paper>
+                  <Paper>Scrum</Paper>
                 </>
               )}
             </StyledStack>

@@ -92,15 +92,14 @@ const Content = () => {
               <div className='content-text'>
                 <h1>BACKGROUND</h1>
                 <p>
-                  Hello! I'm Wayne Chen, a Term 3 student in the Computer System Technology program at BCIT.  
-                  Currently seeking a co-op opportunity.<br></br><br></br>  
-                  Proficient in languages like Python, Java, JavaScript, and more, I bring a solid foundation in programming and web development.<br></br><br></br>  
-                  During my co-op at IOTO, I focused on data collection using BeautifulSoup and Selenium, database management with Neo4j using Cypher queries, API endpoint development, and designing and building web pages to present data visually.  
-                  Notably, I developed the Legislator Analysis and US Battleground pages, structuring US political data efficiently for user interaction and reporting.<br></br><br></br>  
-                  My experience also includes roles as an Education Coordinator and Research Assistant, showcasing my organizational and collaborative skills.<br></br><br></br>  
-                  I am eager to apply my skills in a real-world setting.  
-                  With a focus on programming and web technologies, I am ready to contribute effectively to a dynamic team.<br></br><br></br>  
+                  Hello! I'm Wayne Chen, a <strong>Term 4 Computer Systems Technology student at BCIT</strong> with a strong foundation in programming and web development.  
+                  I am proficient in <strong>Python, Java, JavaScript</strong>, and more, and experienced in building full-stack applications with modern web technologies.<br /><br />
+                  At IOTO, I developed the <em>Legislator Analysis</em> and <em>US Battleground</em> pages, handling <strong>data collection</strong> with BeautifulSoup and Selenium, <strong>database management</strong> using Neo4j and Cypher, and <strong>API development</strong> with Flask.  
+                  I designed interactive web pages that presented complex data visually, improving usability and reporting efficiency.<br /><br />
+                  I have also worked as a Research Assistant, strengthening my <strong>organizational and collaborative skills</strong>.  
+                  I am eager to contribute my technical expertise and problem-solving abilities to a full-time software development role, delivering solutions that make an impact.<br /><br />
                 </p>
+                <p>Feel free to explore my projects and skills in the tabs above!</p>
               </div>
             </div>
           </div>
