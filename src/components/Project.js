@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import City from '../assets/city.jpeg';
 import NBAdle from '../assets/nbadle.png';
 import Pokemon from '../assets/pokemon.png';
+import BCIT from '../assets/bcit.png';
 import '../styles/Project.css';
 import WebsiteLogo from '../assets/websitelogo.png';
 import { CardActionArea } from '@mui/material';
@@ -41,6 +42,11 @@ const handleButtonClick4 = () => {
   window.location.href = 'https://golden-croissant-91909c.netlify.app/';
 };
 
+const handleButtonClick5 = () => {
+  // Redirect to BCIT Chatbot page
+  window.location.href = 'https://github.com/waychen95/bcit-4989-termproject';
+}
+
 const Project = () => {
   return (
     <div id='project-cards'>
@@ -48,7 +54,7 @@ const Project = () => {
         <CardActionArea onClick={handleButtonClick3}>
           <CardMedia
             component="img"
-            alt="city connect"
+            alt="nbadle"
             height="300"
             image={NBAdle}
           />
@@ -69,9 +75,9 @@ const Project = () => {
         <CardActionArea onClick={handleButtonClick3}>
           <CardMedia
             component="img"
-            alt="city connect"
+            alt="bcit chatbot"
             height="300"
-            image={NBAdle}
+            image={BCIT}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">

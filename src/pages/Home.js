@@ -9,7 +9,7 @@ import { lightBlue } from '@mui/material/colors';
 const Home = () => {
   const [text, setText] = useState('');
   const phrases = [
-    "Hi, I'm Wayne Chen, a passionate Full Stack Developer who loves coding!"
+    "Hi, I'm Wayne Chen, a passionate Full Stack Developer who loves coding! I'm looking for new opportunities to create amazing web applications and bring ideas to life."
   ];
 
   useEffect(() => {
