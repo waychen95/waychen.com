@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/waychen.com/static/css/main.0db42574.css",
-    "main.js": "/waychen.com/static/js/main.9b91a568.js",
+    "main.js": "/waychen.com/static/js/main.4d5b3f2f.js",
     "static/js/592.6a3b86e1.chunk.js": "/waychen.com/static/js/592.6a3b86e1.chunk.js",
     "static/media/pokemon.png": "/waychen.com/static/media/pokemon.268c97468ee80ed409ef.png",
     "static/media/nbadle.png": "/waychen.com/static/media/nbadle.24cbcc18baaf42831182.png",
@@ -14,11 +14,11 @@
     "static/media/software.png": "/waychen.com/static/media/software.27180b9595f38a6fcd16.png",
     "index.html": "/waychen.com/index.html",
     "main.0db42574.css.map": "/waychen.com/static/css/main.0db42574.css.map",
-    "main.9b91a568.js.map": "/waychen.com/static/js/main.9b91a568.js.map",
+    "main.4d5b3f2f.js.map": "/waychen.com/static/js/main.4d5b3f2f.js.map",
     "592.6a3b86e1.chunk.js.map": "/waychen.com/static/js/592.6a3b86e1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0db42574.css",
-    "static/js/main.9b91a568.js"
+    "static/js/main.4d5b3f2f.js"
   ]
 }
