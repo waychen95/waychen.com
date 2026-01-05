@@ -33,7 +33,7 @@ const handleButtonClick2 = () => {
 
 const handleButtonClick3 = () => {
   // Redirect to NBAdle page
-  window.location.href = 'https://staging.d1glbwndlcoh8o.amplifyapp.com/';
+  window.location.href = 'https://nba-stats-ecru.vercel.app/';
 };
 
 const handleButtonClick4 = () => {
@@ -44,7 +44,7 @@ const handleButtonClick4 = () => {
 const Project = () => {
   return (
     <div id='project-cards'>
-            <Card sx={style} className='card'>
+      <Card sx={style} className='card'>
         <CardActionArea onClick={handleButtonClick3}>
           <CardMedia
             component="img"
@@ -57,10 +57,31 @@ const Project = () => {
               NBAdle
             </Typography>
             <Typography variant='body1'>
-              | React, PostgreSQL, Flask, Python, JavaScript, HTML, CSS
+              | React, Flask, Python, PostgreSQL, RAG, Vector Search, Embeddings, OpenAI/Gemini API
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              NBAdle is a Wordle-inspired web application for NBA fans to guess the NBA player based on various statistics and clues.
+              NBAdle is a Wordle-inspired web application for NBA fans to guess the NBA player based on various statistics and clues. It leverages advanced technologies such as RAG, vector search, and large language models to provide an engaging and interactive user experience.
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+      <Card sx={style} className='card'>
+        <CardActionArea onClick={handleButtonClick3}>
+          <CardMedia
+            component="img"
+            alt="city connect"
+            height="300"
+            image={NBAdle}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              BCIT Chatbot
+            </Typography>
+            <Typography variant='body1'>
+              | React, Python, RAG, Vector Search, Embeddings, Gemini API
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              A chatbot application designed to assist BCIT students by answering questions related to courses, programs, and campus services using advanced language models and retrieval techniques.
             </Typography>
           </CardContent>
         </CardActionArea>
